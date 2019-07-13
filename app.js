@@ -39,6 +39,6 @@ app.put('/users/:id', editUser);
 app.delete('/users/:id', deleteUser);
 app.post('/users', addUser);
 
-app.listen(3000, () =>{
+app.listen(process.env.PORT || 3000, () =>{
     console.log('App Running Up!');
 });
